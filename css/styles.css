@@ -131,15 +131,11 @@ body {
   margin-right: 76px;
 }
 
-.logo-part-header {
+.header-logo .logo-part {
   color: #2e2f42;
 }
 
-.logo-part-footer {
-  color: #f4f4fd;
-}
-
-.nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -285,4 +281,8 @@ body {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
 }
