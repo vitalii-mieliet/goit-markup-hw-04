@@ -111,7 +111,7 @@ body {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-content {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -164,6 +164,14 @@ body {
   color: #404bbf;
 }
 
+.active:active:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+}
+
 .contacts {
   font-style: normal;
 }
@@ -181,6 +189,12 @@ body {
 
 .hero {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
   padding: 188px 0;
 }
 
