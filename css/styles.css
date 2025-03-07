@@ -383,11 +383,14 @@ body {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  color: #f4f4fd;
 }
 
-.footer-text {
-  width: 264px;
-  color: #f4f4fd;
+.footer .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 120px;
 }
 
 .footer-logo {
@@ -397,4 +400,27 @@ body {
 
 .footer-logo .logo-part {
   color: #f4f4fd;
+}
+
+.footer-text {
+  width: 264px;
+}
+
+.social-links-title {
+  font-weight: 500;
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.footer .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .social-link:hover {
+  background-color: #31d0aa;
 }
