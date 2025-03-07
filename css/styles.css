@@ -428,8 +428,11 @@ nav .nav-link-curent {
 }
 .social-media {
   display: flex;
-
   flex-direction: column;
+}
+
+.footer .icon {
+  fill: #f4f4fd;
 }
 
 .footer .social-link:hover,
