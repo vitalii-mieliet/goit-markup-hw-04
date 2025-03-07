@@ -334,11 +334,9 @@ nav .nav-link-curent {
   background-color: #404bbf;
 }
 
-/* .member-card .icon {
-  fill: none;
-  width: 16px;
-  height: 16px;
-} */
+.member-card .icon {
+  fill: #f4f4fd;
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -401,8 +399,7 @@ nav .nav-link-curent {
 .footer .container {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  gap: 120px;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -416,23 +413,25 @@ nav .nav-link-curent {
 
 .footer-text {
   width: 264px;
+  margin-right: 120px;
 }
 
 .social-links-title {
   font-weight: 500;
   color: #fff;
+  margin-bottom: 16px;
 }
 
+.footer .social-links {
+  gap: 16px;
+}
 .social-media {
   display: flex;
-  gap: 16px;
+
   flex-direction: column;
 }
-.footer .icon {
-  width: 24px;
-  height: 24px;
-}
 
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: #31d0aa;
 }
