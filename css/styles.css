@@ -330,7 +330,8 @@ nav .nav-link-curent {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.member-card:hover .social-link {
+.member-card:hover .social-link,
+.member-card:focus .social-link {
   background-color: #404bbf;
 }
 
