@@ -111,6 +111,8 @@ body {
 .header {
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -170,6 +172,10 @@ body {
   color: #404bbf;
 }
 
+nav .nav-link-curent {
+  color: #404bbf;
+}
+
 .nav-link-curent::after {
   content: '';
   display: block;
@@ -177,7 +183,8 @@ body {
   height: 4px;
   background-color: #404bbf;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
+  border-radius: 2px;
 }
 
 .contacts {
@@ -205,8 +212,12 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  background-position: center;
   background-size: cover;
   padding: 188px 0;
+  margin: auto;
 }
 
 .hero-title {
@@ -268,11 +279,6 @@ body {
   margin-bottom: 8px;
 }
 
-.core-item .icon {
-  width: 64px;
-  height: 64px;
-}
-
 .team-section {
   background-color: #f4f4fd;
 }
@@ -306,12 +312,17 @@ body {
   gap: 24px;
 }
 
+.social-link-item {
+  width: 40px;
+  height: 40px;
+}
+
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   transition-property: background-color;
@@ -323,11 +334,11 @@ body {
   background-color: #404bbf;
 }
 
-.member-card .icon {
+/* .member-card .icon {
   fill: none;
   width: 16px;
   height: 16px;
-}
+} */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -369,9 +380,10 @@ body {
 .project-card:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  .project-card-overlay {
-    transform: translateY(0);
-  }
+}
+
+.project-card:hover .project-card-overlay {
+  transform: translateY(0);
 }
 
 .project-card-text {
