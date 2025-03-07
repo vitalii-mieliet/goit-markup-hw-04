@@ -331,7 +331,7 @@ nav .nav-link-curent {
 }
 
 .member-card:hover .social-link,
-.member-card:focus .social-link {
+.member-card .social-link:focus {
   background-color: #404bbf;
 }
 
