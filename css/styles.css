@@ -290,10 +290,14 @@ nav .nav-link-curent {
 }
 
 .member-info {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  /* display: flex;
+    flex-direction: column;
+    gap: 8px; */
   padding: 32px 0;
+}
+
+.member-info .paragraph {
+  margin-bottom: 8px;
 }
 
 .member-card {
